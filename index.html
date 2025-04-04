@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <script>
+            alert("buongiorno!");
+            
+            function primaFunzione() 
+            {
+               document.getElementById("id1").innerHTML = "ho cambiato il testo!";
+            }
+
+            function cambiaTesto() 
+            {
+               document.getElementById("id2").innerHTML = "Questo è il nuovo testo del paragrafo!";
+            }
+
+            function cambioColore() 
+            {
+                document.getElementById("id1").style.color = "purple";
+            }
+
+            function resetColore() 
+            {
+                document.getElementById("id1").style.color = "blue";
+            }
+
+            function focusInput() 
+            {
+                document.getElementById("focusMessage").innerHTML = "Hai selezionato il campo!";
+            }
+
+            function blurInput() 
+            {
+                document.getElementById("focusMessage").innerHTML = "Non hai selezionato il campo!";
+            }
+
+            function showMessage() 
+            {
+                alert("Cliccato il bottone!");
+            }
+        </script>
+        <title>EA FC 25: Il mio gioco preferito</title>
+        <style>
+            body {
+                color: blue;
+            }
+            
+            h1 {
+                color: red;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 36px;
+                font-family: Helvetica, Arial, sans-serif;
+                font: italic bold 36px Helvetica, Arial, sans-serif;
+            }
+            
+            li {
+                color: green;
+            }
+            
+            .classe1 {
+                background-color: black;
+            }
+            
+            #id1 {
+                text-align: center;
+            }
+            
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            
+            a {
+                color: darkblue;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: darkred;
+                text-decoration: underline;
+            }
+            
+            .classe2 {
+                font-style: italic;
+                color: gray;
+            }
+            
+            #id2 {
+                font-weight: bold;
+            }
+            
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav li {
+                display: inline;
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body onload="alert('ho caricato il body')" onmousemove="console.log('Hai mosso il mouse!')">
+        <h1 class="classe1" onmouseover="cambioColore()" onmouseout="resetColore()">Benvenuto nel mio sito di EA FC 25!</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="gioco.html">gioco</a></li>
+                    <li><a href="film.html">film</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <input type="button" onclick="primaFunzione()" value="cliccami!"/>
+        
+        <h2>Perché mi piace EA FC 25?</h2>
+        <p id="id1" onmouseover="cambioColore()" onmouseout="resetColore()">EA FC 25 mi piace perchè è un gioco di calcio molto divertente, dove puoi giocare da solo o con gli amici.</p>
+        
+        <h2>Caratteristiche principali di EA FC 25</h2>
+        <ul>
+            <li>Modalità carriera dove puoi allenare moltissime squadre</li>
+            <li>Partite veloci contro i tuoi amici o altri giocatori online</li>
+            <li>Tanti campionati e squadre da scegliere</li>
+            <li>Grafica realistica con animazioni fluide</li>
+        </ul>
+        
+        <h2>Cose che trovo interessanti di EA FC 25</h2>
+        <ol>
+            <li>Giocare con la mia squadra preferita</li>
+            <li>Fare grandi gol e grandi parate</li>
+            <li>Creare la mia squadra e competere online</li>
+            <li>Le sfide giornaliere che rendono il gioco sempre vivo e interessante</li>
+            <li>Le personalizzazioni del giocatore e delle squadre</li>
+        </ol>
+        
+        <p class="classe1">In EA FC 25 non solo giochi a calcio, ma puoi anche <strong>costruire la tua carriera e prendere decisioni importanti</strong> come allenatore.</p>
+        
+        <p class="classe2">Mi piace anche che ci siano tante modalità di gioco, così non ci si può mai annoiare.</p>
+        
+        <p id="id2">In conclusione, EA FC 25 è un gioco che ogni appassionato di calcio dovrebbe avere. Ogni partita è divertente e offre tante possibilità, rendendo il gioco davvero completo.</p>
+        
+        <p><a href="https://www.ea.com/ea-sports-fc">Scopri di più su EA FC 25</a></p>
+        
+        <p><a href="https://www.ea.com/ea-sports-fc/store">Compra EA FC 25 ora!</a></p>
+
+        <input type="button" onclick="cambiaTesto()" value="Cambia testo del paragrafo"/>
+        
+        <input type="text" id="inputTest" onfocus="focusInput()" onblur="blurInput()" placeholder="Clicca per scrivere"/>
+        <p id="focusMessage"></p>
+
+        <input type="button" value="Mostra un messaggio" onclick="showMessage()"/>
+    </body>
+</html>
